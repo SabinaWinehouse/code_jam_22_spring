@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="pages/index.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="landing page for Terry Tegegne" />
+    <meta name="keywords" content="landing page about me resume" />
+    <meta name="authors" content="Team Wimari" />
+    <title>Terry S. Tegegne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./vendor/terrybench.ico"
+    />
+  </head>
+  <body class="page">
+    <div class="page__content">
+      <header class="header">
+        <nav class="nav__menu">
+          <ul class="nav__links">
+            <li href="#about" class="nav__links-item">About me</li>
+            <li href="#skills" class="nav__links-item">Skills</li>
+            <li href="#message" class="nav__links-item">Message Me</li>
+            <li href="#contact" class="nav__links-item">Contact</li>
+          </ul>
+        </nav>
+
+        <div class="header__image">
+          <img
+            src="./images/Terrybench.png"
+            alt="terry is procrastinating on a bench beside a pidgen"
+            class="header__image_content"
+          />
+        </div>
+        <div class="header__text">
+          <h1 class="header__title">
+            <span class="header__title-hello">Hello!</span>
+            My name is Terry S. Tegegne
+          </h1>
+          <h3 class="header__subtitle">It's nice to meet you!</h3>
+          <p class="header__description">
+            Terry S. Tegegne, 28 Occupation: Freelance UX designer Hometown:
+            Quincy, Massachusetts Goal: Expand career into software engineering
+          </p>
+        </div>
+      </header>
+
+      <main>
+        <section class="about">
+          <img src="./images/terry.png" alt="About Terry" class="about__img" />
+          <h2 class="about__title">A little bit about me</h2>
+          <p class="about__paragraph">
+            I was raised in a an area of greater Boston. I have made a few
+            attempts to become a programmer and tried out different online
+            courses and bootcamps but never succeeded. Then, I met Elise, a
+            programming guru. So now I'm grown more serious about it and hope to
+            make it all the way through Practicum. However, my motivation can be
+            a little unstable and I often get distracted by his versatile other
+            interests in life.
+          </p>
+        </section>
+
+        <section class="hobbies">
+          <h2 class="hobbies__title">My hobbies</h2>
+          <img
+            src="./images/Terrysmile.png"
+            alt="Terry smiles"
+            class="hobbies__image"
+          />
+
+          <ul class="hobbies__list">
+            <li class="card">
+              <img src="./images/Terrybench.png" alt="" class="card__picture" />
+
+              <h3 class="card__title">Read sci-fi</h3>
+            </li>
+            <li class="card">
+              <img
+                src="./images/terry's_hobbies.png"
+                alt=""
+                class="card__picture"
+              />
+
+              <h3 class="card__title">
+                Listen to a lot of podcasts on history & politics
+              </h3>
+            </li>
+            <li class="card">
+              <img src="./images/Terrychill.png" alt="" class="card__picture" />
+
+              <h3 class="card__title">Run a TikTok blog of his pet goat</h3>
+            </li>
+            <li class="card">
+              <img
+                src="./images/terry_working.png"
+                alt=""
+                class="card__picture"
+              />
+
+              <h3 class="card__title">
+                Also I'm into calligraphy & embroidery
+              </h3>
+            </li>
+          </ul>
+        </section>
+        <section class="skills" id="skills"></section>
+        <section class="message" id="message">
+          <div class="message__image-wrapper">
+            <h2 class="message__title">Give me a&nbsp;shout!</h2>
+            <img
+              class="message__image"
+              src="./images/terry_message_me.png"
+              alt="picture of Terry"
+            />
+          </div>
+
+          <div class="message__form-container">
+            <form class="form message__form">
+              <h2 class="form__title">Message me</h2>
+              <fieldset class="form__fieldset">
+                <label for="full-name" class="form__label">Name</label>
+                <input
+                  class="form__input"
+                  id="full-name"
+                  type="text"
+                  placeholder="Name"
+                  minlength="2"
+                  maxlength="40"
+                  required
+                />
+                <label for="title" class="form__label">Title</label>
+                <input
+                  class="form__input"
+                  id="title"
+                  type="text"
+                  placeholder="Job title, company"
+                  required
+                />
+                <label for="contact" class="form__label"
+                  >Contact information</label
+                >
+                <input
+                  class="form__input"
+                  id="contact"
+                  placeholder="Email"
+                  type="email"
+                  required
+                />
+                <label for="message" class="form__label">Message</label>
+                <textarea
+                  class="form__input input__text"
+                  id="message"
+                  type="text"
+                  placeholder="Message, additional contact information, etc..."
+                  required
+                ></textarea>
+              </fieldset>
+              <fieldset class="form__fieldset">
+                <button class="form__button">Submit</button>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact" class="footer">
+        <div class="footer__image-wrapper">
+          <ul class="footer__image-list">
+            <li class="footer__list-item">
+              <img
+                class="footer__list-image"
+                src="./images/facebook_logo_icon.svg"
+                alt="facebook logo"
+                onclick="window.location.href='https://facebook.com';"
+              />
+            </li>
+            <li class="footer__list-item">
+              <img
+                class="footer__list-image"
+                src="./images/instagram_logo_icon.svg"
+                alt="instagram logo"
+                onclick="window.location.href='https://instagram.com';"
+              />
+            </li>
+            <li class="footer__list-item">
+              <img
+                class="footer__list-image"
+                src="./images/twitter_logo_icon.svg"
+                alt="twitter logo"
+                onclick="window.location.href='https://twitter.com';"
+              />
+            </li>
+            <li class="footer__list-item">
+              <img
+                class="footer__list-image"
+                src="./images/linkedin_logo_icon.svg"
+                alt="linkedin logo"
+                onclick="window.location.href='https://linkedin.com';"
+              />
+            </li>
+            <li class="footer__list-item">
+              <img
+                class="footer__list-image"
+                src="./images/github_logo_icon.svg"
+                alt="github logo"
+                onclick="window.location.href='https://github.com';"
+              />
+            </li>
+          </ul>
+        </div>
+        <p class="footer__paragraph">©️2022 WiMaRi Team</p>
+      </footer>
+    </div>
+
+    <div class="popup">
+      <div class="popup__container">
+        <button class="popup__close-button" type="button"></button>
+        <img
+          class="popup__image"
+          src="./images/flying_robot.png"
+          alt="flying robot"
+        />
+        <p class="popup__message">Thank you! I will get back to you ASAP!</p>
+      </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
